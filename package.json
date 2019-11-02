@@ -1,0 +1,19 @@
+{
+  "name": "adopta-un-perro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisco-j/adopta-un-perro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francisco-j/adopta-un-perro/issues"
+  },
+  "homepage": "https://github.com/francisco-j/adopta-un-perro#readme"
+}
