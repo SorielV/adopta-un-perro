@@ -1,5 +1,5 @@
 //MONGODB_URI defined in heroku
-var mongoUri = (process.env.MONGODB_URI || 'mongodb://localhost/vulcan');
+var mongoUri = (process.env.MONGODB_URI || 'mongodb://localhost/perritos');
 
 module.exports = (mongoose)=>{
     // connect to  mongoDB
