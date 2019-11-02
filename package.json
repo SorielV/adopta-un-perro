@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/francisco-j/adopta-un-perro/issues"
   },
-  "homepage": "https://github.com/francisco-j/adopta-un-perro#readme"
+  "homepage": "https://github.com/francisco-j/adopta-un-perro#readme",
+  "dependencies": {
+    "pug": "^2.0.4"
+  }
 }
