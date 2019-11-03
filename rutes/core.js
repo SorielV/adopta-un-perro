@@ -58,7 +58,7 @@ router.get('/gallery', (req, res) => {
 
 // lomitos
 router.get('/mygallery', (req, res) => {
-    res.sendFile("/myGallery.html", { root: "views" });
+    res.sendFile("/myGalleryLomitos.html", { root: "views" });
 });
 
 // myProfile
