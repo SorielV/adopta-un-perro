@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../public/css/sign.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
@@ -41,7 +42,7 @@
                 <div class="col-md-12 d-flex mt-15vh">
 
                     <figure class="col-md-4">
-                        <a href="#" data-size="1600x1067">
+                        <a href="#" onclick="modalAdopt()" data-size="1600x1067">
                             <img alt="picture" src="../public/img/lomitos/lomito1.jpg" class="img-fluid img-lomito ">
                         </a>
                     </figure>
@@ -101,7 +102,31 @@
             </ul>
         </nav>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="lomitoName" class="modal-title">Solobino</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img alt="picture" src="../public/img/lomitos/lomito1.jpg" class="img-fluid img-lomito ">
+                    <p id="lomitoDescription">Descripcion del lomito</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#"> <i class="fas fa-paw iconNav-size iconNav-color  ml-3"
+                            title="Galeria de lomitos en adopción"></i> </a href="#">
+                    <a href="#"> <i class="fas fa-grin-hearts iconNav-size iconNav-color ml-3"
+                            title="Donaciones a href=" #" dog´s Home"></i></a href="#">
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
+<script src="../utilities/lomitos.js"></script>
 
 </html>
