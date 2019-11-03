@@ -6,7 +6,9 @@ module.exports = (mongoose)=>{
     mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch((e) => {
         console.log(e.message)
+        console.log("terminando")
         process.exit(1)
+        
     })
     .then(() => {
         console.log("connected to Mongo Atlas")
