@@ -10,269 +10,224 @@
         </button>
       </div>
       <div class="card">
-          <article class="card-body">
-              <hr>
-              <p class="text-success text-center">Some message goes here</p>
-              <form>
-              <div class="form-group">
+        <article class="card-body">
+          <hr>
+          <p class="text-success text-center">Some message goes here</p>
+          <form>
+            <div class="form-group">
               <div class="input-group">
-                  <div class="input-group-prepend">
-                      <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                   </div>
-                  <input name="" class="form-control" placeholder="Email or login" type="email">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                </div>
+                <input name="" class="form-control" placeholder="Email or login" type="email">
               </div> <!-- input-group.// -->
-              </div> <!-- form-group// -->
-              <div class="form-group">
+            </div> <!-- form-group// -->
+            <div class="form-group">
               <div class="input-group">
-                  <div class="input-group-prepend">
-                      <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                   </div>
-                  <input class="form-control" placeholder="******" type="password">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input class="form-control" placeholder="******" type="password">
               </div> <!-- input-group.// -->
-              </div> <!-- form-group// -->
-              <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block"> Login  </button>
-              </div> <!-- form-group// -->
-              <p class="text-center"><a href="#" class="btn">Forgot password?</a></p>
-              </form>
-          </article>
-          </div> <!-- card.// -->
-      </div>
-  </div>
-  </div>  
-      </div>
+            </div> <!-- form-group// -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block"> Login </button>
+            </div> <!-- form-group// -->
+            <p class="text-center"><a href="#" class="btn">Forgot password?</a></p>
+          </form>
+        </article>
+      </div> <!-- card.// -->
     </div>
   </div>
 </div>
+</div>
+</div>
+</div>
+</div>
 
-<nav class="navbar navbar-expand-lg navbar-blue bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form method="get" action="/views/login.ejs">
-      <a href="" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#modalRegisterForm">login</a>
+<body class="bg-color">
+  <nav class="navbar navbar-color nav-height
+     justify-content-between">
+    <a><img class="navbar-icon " src="img/logo.svg"></a>
+    <h1 class="display-4 text-light ml-3">Salva lomitos</h1>
+    <div class="ml-auto mr-2rem">
+      <a href="#"> <i class="fas fa-dog iconNav-size iconNav-color  ml-3" title="Galeria de lomitos en adopción"></i>
+      </a>
+      <a href="./dogsHome.html"> <i class="fas fa-hand-holding-heart iconNav-size iconNav-color ml-3"
+          title="Donaciones a mi dog´s home"></i></a>
+    </div>
+    <form class="form-inline">
+      <button class="btn btn-lg btn-outline-primary btnNav my-2 my-sm-0" type="submit">Log in</button>
     </form>
-  </div>
-</nav>
 
-<div style="background-color: navy;">
-  <div class="row d-flex align-items-end justify-content-end p-5">
-    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-sm-6 d-flex align-items-end">
-      <div class="container">
-        <div class="title">
-          <!-- Tabs with icons on Card -->
-          <div class="card card-nav-tabs">
-            <div class="card-header card-header-primary">
-              <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-              <div class="nav-tabs-navigation">
-                <div class="nav-tabs-wrapper">
-                  <ul class="nav nav-tabs" data-tabs="tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#profile" data-toggle="tab">
-                        <i class="material-icons">face</i>
-                        Lomitos
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#messages" data-toggle="tab">
-                        <i class="material-icons">chat</i>
-                        Instituciones
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card-body ">
-              <div class="tab-content text-center">
-                <div class="tab-pane active" id="profile">
-                  <div class="card">
-                    <h5 class="card-header info-color white-text text-center py-4">
-                      <strong>Adoptador de lomitos</strong>
-                    </h5>
-                    <!--Card content-->
-                    <div class="card-body px-lg-5 pt-0">
-
-                      <!-- Form -->
-                      <form class="text-center" style="color: #757575;" action="#!">
-
-                        <div class="form-row">
-                          <div class="col">
-                            <!-- First name -->
-                            <div class="md-form">
-                              <input type="text" id="materialRegisterFormFirstName" class="form-control">
-                              <label for="materialRegisterFormFirstName">First name</label>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <!-- Last name -->
-                            <div class="md-form">
-                              <input type="email" id="materialRegisterFormLastName" class="form-control">
-                              <label for="materialRegisterFormLastName">Last name</label>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- E-mail -->
-                        <div class="md-form mt-0">
-                          <input type="email" id="materialRegisterFormEmail" class="form-control">
-                          <label for="materialRegisterFormEmail">E-mail</label>
-                        </div>
-
-                        <!-- Password -->
-                        <div class="md-form">
-                          <input type="password" id="materialRegisterFormPassword" class="form-control"
-                            aria-describedby="materialRegisterFormPasswordHelpBlock">
-                          <label for="materialRegisterFormPassword">Password</label>
-                          <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-                            At least 8 characters and 1 digit
-                          </small>
-                        </div>
-
-                        <!-- Phone number -->
-                        <div class="md-form">
-                          <input type="password" id="materialRegisterFormPhone" class="form-control"
-                            aria-describedby="materialRegisterFormPhoneHelpBlock">
-                          <label for="materialRegisterFormPhone">Phone number</label>
-                          <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-                            Optional - for two step authentication
-                          </small>
-                        </div>
-
-                        <!-- Newsletter -->
-                        <div class="form-check">
-                          <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
-                          <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our
-                            newsletter</label>
-                        </div>
-
-                        <!-- Sign up button -->
-                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
-                          type="submit">Sign in</button>
-                        <hr>
-
-                        <!-- Terms of service -->
-                        <p>By clicking
-                          <em>Sign up</em> you agree to our
-                          <a href="" target="_blank">terms of service</a>
-                      </form>
-                      <!-- Form -->
-                    </div>
+  </nav>
+  <div class="row">
+    <div class="col-sm m-auto">
+      <h2 class="text-justify display-4">Es un sitio web que busca conectar a los lomitos mas desafortunados que se
+        encuentran en las perreras mas cercanas a ti,
+        para brindarles un nuevo hogar y una vida llena de amor.</h2>
+    </div>
+    <div class="row d-flex align-items-end justify-content-end p-5 col-sm">
+      <div class="d-flex align-items-end">
+        <div class="container">
+          <div class="title">
+            <!-- Tabs with icons on Card -->
+            <div class="card card-nav-tabs">
+              <div class="card-header card-header-primary">
+                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                <div class="nav-tabs-navigation">
+                  <div class="nav-tabs-wrapper">
+                    <ul class="nav nav-tabs" data-tabs="tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#profile" data-toggle="tab">
+                          <i class="material-icons">face</i>
+                          Quiero adoptar
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#messages" data-toggle="tab">
+                          <i class="fas fa-home" title="Donaciones a mi dog´s home"></i>
+                          Casas de adopción
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="tab-pane" id="messages">
+              </div>
+              <div class="card-body ">
+                <div class="tab-content text-center">
+                  <div class="tab-pane active" id="profile">
+                    <div class="card">
+                      <h5 class="card-header info-color white-text text-center py-4">
+                        <strong>Adoptador de lomitos</strong>
+                      </h5>
+                      <!--Card content-->
+                      <div class="card-body px-lg-5 pt-0">
 
-                  <div class="card">
+                        <!-- Form -->
+                        <form class="text-center" style="color: #757575;" action="#!">
 
-                    <h5 class="card-header info-color white-text text-center py-4">
-                      <strong>Instituciones</strong>
-                    </h5>
+                          <!-- First name -->
+                          <div class="md-form">
+                            <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                            <label for="materialRegisterFormFirstName">Nombre</label>
+                          </div>
 
-                    <!--Card content-->
-                    <div class="card-body px-lg-5 pt-0">
 
-                      <!-- Form -->
-                      <form class="text-center" style="color: #757575;" action="#!">
+                          <!-- E-mail -->
+                          <div class="md-form mt-0">
+                            <input type="email" id="materialRegisterFormEmail" class="form-control">
+                            <label for="materialRegisterFormEmail">Correo</label>
+                          </div>
 
-                        <div class="form-row">
-                          <div class="col">
+                          <!-- Password -->
+                          <div class="md-form">
+                            <input type="password" id="materialRegisterFormPassword" class="form-control"
+                              aria-describedby="materialRegisterFormPasswordHelpBlock">
+                            <label for="materialRegisterFormPassword">Contraseña</label>
+                            <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                              At least 8 characters and 1 digit
+                            </small>
+                          </div>
+
+                          <!-- Phone number -->
+                          <div class="md-form">
+                            <input type="password" id="materialRegisterFormPhone" class="form-control"
+                              aria-describedby="materialRegisterFormPhoneHelpBlock">
+                            <label for="materialRegisterFormPhone">Telefono</label>
+                            <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                              Optional - for two step authentication
+                            </small>
+                          </div>
+
+                          <!-- Sign up button -->
+                          <a class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                          href="/gallery">Sign in</a>
+                          <hr>
+
+                        </form>
+                        <!-- Form -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="messages">
+
+                    <div class="card">
+
+                      <h5 class="card-header info-color white-text text-center py-4">
+                        <strong>Instituciones</strong>
+                      </h5>
+
+                      <!--Card content-->
+                      <div class="card-body px-lg-5 pt-0">
+
+                        <!-- Form -->
+                        <form class="text-center" style="color: #757575;" action="#!">
+
+
+                          <div class="">
                             <!-- First name -->
                             <div class="md-form">
                               <input type="text" id="materialRegisterFormFirstName" class="form-control">
-                              <label for="materialRegisterFormFirstName">First name</label>
+                              <label for="materialRegisterFormFirstName">Nombre</label>
                             </div>
                           </div>
-                          <div class="col">
+                          <div class="">
                             <!-- Last name -->
                             <div class="md-form">
                               <input type="email" id="materialRegisterFormLastName" class="form-control">
-                              <label for="materialRegisterFormLastName">Last name</label>
+                              <label for="materialRegisterFormLastName">Dirección</label>
                             </div>
                           </div>
-                        </div>
 
-                        <!-- E-mail -->
-                        <div class="md-form mt-0">
-                          <input type="email" id="materialRegisterFormEmail" class="form-control">
-                          <label for="materialRegisterFormEmail">E-mail</label>
-                        </div>
 
-                        <!-- Password -->
-                        <div class="md-form">
-                          <input type="password" id="materialRegisterFormPassword" class="form-control"
-                            aria-describedby="materialRegisterFormPasswordHelpBlock">
-                          <label for="materialRegisterFormPassword">Password</label>
-                          <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-                            At least 8 characters and 1 digit
-                          </small>
-                        </div>
+                          <!-- E-mail -->
+                          <div class="md-form mt-0">
+                            <input type="" id="materialRegisterFormEmail" class="form-control">
+                            <label for="materialRegisterFormEmail">Telefono</label>
+                          </div>
+                          <div class="md-form mt-0">
+                            <input type="email" id="materialRegisterFormEmail" class="form-control">
+                            <label for="materialRegisterFormEmail">E-mail</label>
+                          </div>
 
-                        <!-- Phone number -->
-                        <div class="md-form">
-                          <input type="password" id="materialRegisterFormPhone" class="form-control"
-                            aria-describedby="materialRegisterFormPhoneHelpBlock">
-                          <label for="materialRegisterFormPhone">Phone number</label>
-                          <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-                            Optional - for two step authentication
-                          </small>
-                        </div>
 
-                        <!-- Newsletter -->
-                        <div class="form-check">
-                          <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
-                          <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our
-                            newsletter</label>
-                        </div>
+                          <!-- Password -->
+                          <div class="md-form">
+                            <input type="password" id="materialRegisterFormPassword" class="form-control"
+                              aria-describedby="materialRegisterFormPasswordHelpBlock">
+                            <label for="materialRegisterFormPassword">Password</label>
+                            <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                              At least 8 characters and 1 digit
+                            </small>
+                          </div>
 
-                        <!-- Sign up button -->
-                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
-                          type="submit">Sign in</button>
+                          <!-- Phone number -->
+                          <div class="md-form">
+                            <input type="password" id="materialRegisterFormPhone" class="form-control"
+                              aria-describedby="materialRegisterFormPhoneHelpBlock">
+                            <label for="materialRegisterFormPhone">Phone number</label>
+                            <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                              Optional - for two step authentication
+                            </small>
+                          </div>
 
-                        <!-- Social register -->
-                        <p>or sign up with:</p>
-                        <hr>
+                          <!-- Sign up button -->
+                          <a class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                          href="/mygallery">Sign in</a>
 
-                        <!-- Terms of service -->
-                        <p>By clicking
-                          <em>Sign up</em> you agree to our
-                          <a href="" target="_blank">terms of service</a>
-                      </form>
-                      <!-- Form -->
+                        </form>
+                        <!-- Form -->
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- End Tabs with icons on Card -->
           </div>
-          <!-- End Tabs with icons on Card -->
         </div>
       </div>
     </div>
   </div>
-</div>
+</body>
