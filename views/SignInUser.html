@@ -18,7 +18,7 @@
     <nav class="navbar navbar-color nav-height
      justify-content-between">
         <a><img class="navbar-icon " src="../public/img/logo.jpg"></a>
-        <h1 class="text-light">Salva lomitos</h1>
+        <h1 class="display-4 text-light">Salva lomitos</h1>
         <div class="ml-auto mr-2rem">
             <a href="#"> <i class="fas fa-dog iconNav-size iconNav-color  ml-3"
                     title="Galeria de lomitos en adopción"></i> </a href="#">
@@ -35,11 +35,13 @@
     <div class=" body-height">
         <div>
             <form class="form-inline d-flex justify-content-center mt-4">
-                <button class="btn btn-outline-succes btnNav my-2 my-sm-0" type="submit">Seleccionar perrito
-                    aleatorio</button>
+                <button class="btn btn-outline-succes px-md-5 m-5 d-block" type="submit" onclick="modalLomitoAlea()">
+                    <a class="display-4"> Seleccionar perrito aleatorio</a><br>
+                    <a class=" display-3"><i class="fas fa-bone"></i></a>
+                </button>
             </form>
             <div class="row text-center">
-                <div class="col-md-12 d-flex mt-15vh">
+                <div class="col-md-12 d-flex ">
 
                     <figure class="col-md-4">
                         <a href="#" onclick="modalAdopt()" data-size="1600x1067">
@@ -48,14 +50,14 @@
                     </figure>
 
                     <figure class="col-md-4">
-                        <a href="#" data-size="1600x1067">
+                        <a href="#" onclick="modalAdopt()" data-size="1600x1067">
                             <img alt="picture" src="../public/img/lomitos/lomito2.jpg"
                                 class="img-fluid img-lomito img-lomito " />
                         </a>
                     </figure>
 
                     <figure class="col-md-4">
-                        <a href="#" data-size="1600x1067">
+                        <a href="#" onclick="modalAdopt()" data-size="1600x1067">
                             <img alt="picture" src="../public/img/lomitos/lomito3.jpg" class="img-fluid img-lomito " />
                         </a>
                     </figure>
@@ -63,18 +65,18 @@
                 </div>
                 <div class="col-md-12 d-flex">
                     <figure class="col-md-4">
-                        <a href="#" data-size="1600x1067">
+                        <a href="#" onclick="modalAdopt()" data-size="1600x1067">
                             <img alt="picture" src="../public/img/lomitos/lomito4.jpg" class="img-fluid img-lomito " />
                         </a>
                     </figure>
 
                     <figure class="col-md-4">
-                        <a href="#" data-size="1600x1067">
+                        <a href="#" onclick="modalAdopt()" data-size="1600x1067">
                             <img alt="picture" src="../public/img/lomitos/lomito5.jpg" class="img-fluid img-lomito " />
                         </a>
                     </figure>
                     <figure class="col-md-4">
-                        <a href="#" data-size="1600x1067">
+                        <a href="#" onclick="modalAdopt()" ata-size="1600x1067">
                             <img alt="picture" src="../public/img/lomitos/lomito6.jpg" class="img-fluid img-lomito " />
                         </a>
                     </figure>
@@ -112,14 +114,14 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <img alt="picture" src="../public/img/lomitos/lomito1.jpg" class="img-fluid img-lomito ">
+                    <img alt="picture" src="../public/img/lomitos/lomito1.jpg" class="img-fluid">
                     <p id="lomitoDescription">Descripcion del lomito</p>
                 </div>
                 <div class="modal-footer">
-                    <a href="#"> <i class="fas fa-paw iconNav-size iconNav-color  ml-3"
-                            title="Galeria de lomitos en adopción"></i> </a href="#">
-                    <a href="#"> <i class="fas fa-grin-hearts iconNav-size iconNav-color ml-3"
-                            title="Donaciones a href=" #" dog´s Home"></i></a href="#">
+                    <a href="#"> I like it <i class="fas fa-paw iconNav-size iconNav-color  ml-3 iconHover"
+                            title="Agregar a los lomitos que me gustan"></i> </a href="#">
+                    <a href="#"> I want it <i class="fas fa-grin-hearts iconNav-size iconNav-color ml-3 iconHover"
+                            title="Adoptar" href=" #" dog´s Home"></i></a href="#">
                 </div>
             </div>
 

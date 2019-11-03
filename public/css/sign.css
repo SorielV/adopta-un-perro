@@ -35,17 +35,42 @@
     background-color:#6796AF !important;
 }
 .btn-outline-succes{
-    background-color:#6796AF  !important;
+    background-color:#D1AD4B  !important;
     color: white  !important;
     border-color: white !important;
+    border-radius: 30px !important;
     
 }
 .btn-outline-succes:hover{
-    background-color:#D1AD4B !important;
+    background-color:#E58A0B !important;
 }
 .img-lomito {
     width: 700px; /* You can set the dimensions to whatever you want */
     max-height: 400px;
     object-fit: cover;
+    border-radius: 15px;
+}
+.fa-paw:hover{
+    color: #E58A0B;
+}
+.fa-grin-hearts:hover{
+    color: #E58A0B;
+}
+.iconNav-color:hover{
+    color: rgb(153, 114, 5);
+}
+.page-link:hover{
+    background-color: #006E90 !important;
+    border-color: #6796AF !important;
+}
+.page-link {
+    color:white !important;
+    background-color:#6796AF !important;
+    border: 1px solid #006E90 !important;
 }
 
+@media (max-width: 1800px){
+    .img-lomito {
+        max-height: 250px;
+    }
+}
