@@ -71,6 +71,11 @@ router.get('/registro', (req, res) => {
     res.render('registro.ejs');
 });
 
+// registro
+router.get('/asd', (req, res) => {
+    res.sendFile("/galleryDogsHouse.html", { root: "views" });
+});
+
 // ----------------------------------------------------------
 
 // route middleware to make sure a user is logged in
