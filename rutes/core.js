@@ -2,11 +2,24 @@ var express = require('express');
 var passport = require('passport');
 var router = express.Router();
 
+
+//home screen
 router.get("/", (req, res) => {
     res.render("home", { title: "home" });
 });
 
+
 router.post('/login', passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login' }));
+
+// process the signup form
+app.post('/signup', passport.authenticate('local-signup', {
+    successRedirect : '/profile', // redirect to the secure profile section
+    failureRedirect : '/signup', // redirect back to the signup page if there is an error
+    failureFlash : true // allow flash messages
+}));
+
+// process the login form TODO:
+router.post('/login');
 
 // LOGIN
 router.get('/login', function (req, res) {
@@ -16,9 +29,6 @@ router.get('/login', function (req, res) {
     res.render('login', { title: "home" });
 });
 
-// process the login form TODO:
-router.post('/login');
-
 // SIGNUP
 router.get('/signup', function (req, res) {
     // show the signup form
@@ -27,12 +37,8 @@ router.get('/signup', function (req, res) {
     res.render('signup', { title: "home" });
 });
 
-// process the signup form TODO:
-router.post('/signup');
-
 // PROFILE SECTION
-// protected, have to be logged in
-// we will use route middleware to verify this (the isLoggedIn function)
+// protected, have to be logged in. with middleware to verify if isLoggedIn
 router.get('/profile', isLoggedIn, function (req, res) {
     res.render('profile.pug', { user: req.user });
 });
@@ -54,6 +60,7 @@ function isLoggedIn(req, res, next) {
     // if they aren't redirect them to the home page
     res.redirect('/');
 }
+
 
 
 module.exports = router
