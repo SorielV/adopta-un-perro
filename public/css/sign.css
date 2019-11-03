@@ -10,7 +10,9 @@
 .body-height{
     height: 93vh;
 }
-
+.mt-15vh{
+    margin-top: 15vh !important;
+}
 .nav-height{
     height:7vh;
 }
@@ -32,3 +34,18 @@
 .btn-outline-primary:hover{
     background-color:#6796AF !important;
 }
+.btn-outline-succes{
+    background-color:#6796AF  !important;
+    color: white  !important;
+    border-color: white !important;
+    
+}
+.btn-outline-succes:hover{
+    background-color:#D1AD4B !important;
+}
+.img-lomito {
+    width: 700px; /* You can set the dimensions to whatever you want */
+    max-height: 400px;
+    object-fit: cover;
+}
+
