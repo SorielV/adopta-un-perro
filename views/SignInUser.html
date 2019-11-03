@@ -13,10 +13,11 @@
     <title>SignInUser</title>
 </head>
 
-<body>
+<body class="bg-color">
     <nav class="navbar navbar-color nav-height
      justify-content-between">
         <a><img class="navbar-icon " src="../public/img/logo.jpg"></a>
+        <h1 class="text-light">Salva lomitos</h1>
         <div class="ml-auto mr-2rem">
             <a href="#"> <i class="fas fa-dog iconNav-size iconNav-color  ml-3"
                     title="Galeria de lomitos en adopción"></i> </a href="#">
@@ -25,59 +26,63 @@
             <a href="#"> <i class="fas fa-home iconNav-size iconNav-color ml-3" title="Perritos que me gustan"></i></a>
         </div>
         <form class="form-inline">
-            <button class="btn btn-outline-primary btnNav my-2 my-sm-0" type="submit">Log Out</button>
+            <button class="btn btn-lg btn-outline-primary btnNav my-2 my-sm-0" type="submit">Log Out</button>
         </form>
 
     </nav>
-    <div class="bg-color body-height">
-        <div >
-                <div class="row">
-                        <div class="col-md-12">
-                      
-                          <div id="mdb-lightbox-ui"></div>
-                      
-                          <div class="mdb-lightbox">
-                      
-                            <figure class="col-md-4">
-                              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" data-size="1600x1067">
-                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" class="img-fluid">
-                              </a>
-                            </figure>
-                      
-                            <figure class="col-md-4">
-                              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
-                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" class="img-fluid" />
-                              </a>
-                            </figure>
-                      
-                            <figure class="col-md-4">
-                              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg" data-size="1600x1067">
-                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" class="img-fluid" />
-                              </a>
-                            </figure>
-                      
-                            <figure class="col-md-4">
-                              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
-                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" class="img-fluid" />
-                              </a>
-                            </figure>
-                      
-                            <figure class="col-md-4">
-                              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg" data-size="1600x1067">
-                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg" class="img-fluid" />
-                              </a>
-                            </figure>
-                      
-                        
-                      
-                          </div>
-                      
-                        </div>
-                      </div>
-        </div>
 
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
+    <div class=" body-height">
+        <div>
+            <form class="form-inline d-flex justify-content-center mt-4">
+                <button class="btn btn-outline-succes btnNav my-2 my-sm-0" type="submit">Seleccionar perrito
+                    aleatorio</button>
+            </form>
+            <div class="row text-center">
+                <div class="col-md-12 d-flex mt-15vh">
+
+                    <figure class="col-md-4">
+                        <a href="#" data-size="1600x1067">
+                            <img alt="picture" src="../public/img/lomitos/lomito1.jpg" class="img-fluid img-lomito ">
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="#" data-size="1600x1067">
+                            <img alt="picture" src="../public/img/lomitos/lomito2.jpg"
+                                class="img-fluid img-lomito img-lomito " />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="#" data-size="1600x1067">
+                            <img alt="picture" src="../public/img/lomitos/lomito3.jpg" class="img-fluid img-lomito " />
+                        </a>
+                    </figure>
+
+                </div>
+                <div class="col-md-12 d-flex">
+                    <figure class="col-md-4">
+                        <a href="#" data-size="1600x1067">
+                            <img alt="picture" src="../public/img/lomitos/lomito4.jpg" class="img-fluid img-lomito " />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="#" data-size="1600x1067">
+                            <img alt="picture" src="../public/img/lomitos/lomito5.jpg" class="img-fluid img-lomito " />
+                        </a>
+                    </figure>
+                    <figure class="col-md-4">
+                        <a href="#" data-size="1600x1067">
+                            <img alt="picture" src="../public/img/lomitos/lomito6.jpg" class="img-fluid img-lomito " />
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+        <nav aria-label="Page navigation example ">
+            <ul class="pagination pagination-lg d-flex justify-content-center">
                 <li class="page-item">
                     <a class="page-link" href="#" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
