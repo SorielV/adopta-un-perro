@@ -10,3 +10,7 @@ function solicitarAdoptar(){
     $("#verLomito").hide(); 
     $("#solicitudAdopt").show(); 
 }
+function solicitarDonar(){
+    $("#verLomito").hide(); 
+    $("#solicitudAdopt").show(); 
+}

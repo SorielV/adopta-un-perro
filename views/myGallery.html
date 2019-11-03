@@ -22,40 +22,37 @@
         <div class="ml-auto mr-2rem">
             <a href="#"> <i class="fas fa-dog iconNav-size iconNav-color  ml-3"
                     title="Galeria de lomitos en adopción"></i> </a>
-            <a href="#"> <i class="fas fa-hand-holding-heart iconNav-size iconNav-color ml-3"
-                    title="Donaciones a dog´s home"></i></a>
-            <a href="#"> <i class="fas fa-home iconNav-size iconNav-color ml-3" title="Perritos que me gustan"></i></a>
+            <a href="./dogsHome.html"> <i class="fas fa-hand-holding-heart iconNav-size iconNav-color ml-3"
+                    title="Donaciones a mi dog´s home"></i></a>
         </div>
+        <form class="form-inline">
+            <button class="btn btn-lg btn-outline-primary btnNav my-2 my-sm-0" type="submit">Log Out</button>
+        </form>
 
     </nav>
 
     <div class=" body-height">
-        <div>
-            <div class="text-center mt-5 mb-5">
-                <a class="display-4"> Dog´s Home que necesitan tu ayuda</a><br>
-                <a class=" display-4"><i class="fas fa-bone"></i></a>
-                <a class=" display-1"> <i class="fas fa-home"></i></a>
-                <a class=" display-3"> <i class="fas fa-dog"></i></a>
-            </div>
+        <!-- imagenes -->
+        <div class="pt-5">
             <div class="row text-center">
                 <div class="col-md-12 d-flex ">
 
                     <figure class="col-md-4">
                         <a href="#" onclick="modalAdopt()" data-size="1600x1067">
-                            <img alt="picture" src="../public/img/dogshome/doghome1.jpg" class="img-fluid img-lomito ">
+                            <img alt="picture" src="../public/img/lomitos/lomito1.jpg" class="img-fluid img-lomito ">
                         </a>
                     </figure>
 
                     <figure class="col-md-4">
                         <a href="#" onclick="modalAdopt()" data-size="1600x1067">
-                            <img alt="picture" src="../public/img/dogshome/doghome2.jpg"
+                            <img alt="picture" src="../public/img/lomitos/lomito2.jpg"
                                 class="img-fluid img-lomito img-lomito " />
                         </a>
                     </figure>
 
                     <figure class="col-md-4">
                         <a href="#" onclick="modalAdopt()" data-size="1600x1067">
-                            <img alt="picture" src="../public/img/dogshome/doghome3.jpg" class="img-fluid img-lomito " />
+                            <img alt="picture" src="../public/img/lomitos/lomito3.jpg" class="img-fluid img-lomito " />
                         </a>
                     </figure>
 
@@ -63,18 +60,18 @@
                 <div class="col-md-12 d-flex">
                     <figure class="col-md-4">
                         <a href="#" onclick="modalAdopt()" data-size="1600x1067">
-                            <img alt="picture" src="../public/img/dogshome/doghome4.jpg" class="img-fluid img-lomito " />
+                            <img alt="picture" src="../public/img/lomitos/lomito4.jpg" class="img-fluid img-lomito " />
                         </a>
                     </figure>
 
                     <figure class="col-md-4">
                         <a href="#" onclick="modalAdopt()" data-size="1600x1067">
-                            <img alt="picture" src="../public/img/dogshome/doghome5.jpg" class="img-fluid img-lomito " />
+                            <img alt="picture" src="../public/img/lomitos/lomito5.jpg" class="img-fluid img-lomito " />
                         </a>
                     </figure>
                     <figure class="col-md-4">
                         <a href="#" onclick="modalAdopt()" ata-size="1600x1067">
-                            <img alt="picture" src="../public/img/dogshome/doghome6.jpg" class="img-fluid img-lomito " />
+                            <img alt="picture" src="../public/img/lomitos/lomito6.jpg" class="img-fluid img-lomito " />
                         </a>
                     </figure>
                 </div>
@@ -100,6 +97,12 @@
                 </li>
             </ul>
         </nav>
+        <form class="form-inline d-flex justify-content-center mt-4">
+                <button class="btn btn-outline-info px-md-5 m-5 d-block btnNewLomito" type="submit" onclick="modalLomitoAlea()">
+                    <a class="display-4"> Agregar nuevo lomito para adopción</a><br>
+                    <a class=" display-3"><i class="fas fa-dog"></i></a>
+                </button>
+            </form>
     </div>
     <!-- Modal para ver lomito-->
     <div class="modal fade" id="myModal" role="dialog">
@@ -107,28 +110,36 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 id="lomitoName" class="modal-title text-center">Centro municipal de acogida de animales abandonados</h3>
+                    <h3 id="lomitoName" class="modal-title">Solobino</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <div class="modal-body">
-                    <img alt="picture" src="../public/img/dogshome/doghome4.jpg" class="img-fluid">
+                    <img alt="picture" src="../public/img/lomitos/lomito1.jpg" class="img-fluid">
                     <div id="verLomito">
                         <div>
-                            <a class="font-weight-bold">Nombre: <a id="nombreLomito"></a></a>
+                            <a class="font-weight-bold">Nombre: <a id="nombreLomito">Solovino</a></a>
                         </div>
                         <div>
-                            <a class="font-weight-bold">Dirección: <a id="edadLomito"></a></a>
+                            <a class="font-weight-bold">Edad: <a id="edadLomito"></a></a>
                         </div>
                         <div>
-                            <a class="font-weight-bold">Telefono: <a id="estaturaLomito"></a></a>
+                            <a class="font-weight-bold">Estatura: <a id="estaturaLomito"></a></a>
                         </div>
                         <div>
-                            <a class="font-weight-bold">E-mail: <a id="pesoLomito"></a></a>
+                            <a class="font-weight-bold">Peso: <a id="pesoLomito"></a></a>
+                        </div>
+                        <div>
+                            <a class="font-weight-bold">Vacunas: <a id="VacunaLomito"></a></a>
+                        </div>
+                        <div>
+                            <a class="font-weight-bold">Señas particulares: <a id="señasLomito"></a></a>
                         </div>
                         <div class="modal-footer">
-                            <a href="#" onclick="solicitarDonar()"> I want donate <i
-                                    class="fas fa-hand-holding-heart iconNav-size iconNav-color ml-3 iconHover" title="Adoptar"
+                            <a href="#"> I like it <i class="fas fa-paw iconNav-size iconNav-color  ml-3 iconHover"
+                                    title="Agregar a los lomitos que me gustan"></i> </a href="#">
+                            <a href="#" onclick="solicitarAdoptar()"> I want it <i
+                                    class="fas fa-grin-hearts iconNav-size iconNav-color ml-3 iconHover" title="Adoptar"
                                     href=" #" dog´s Home"></i></a href="#">
                         </div>
                     </div>

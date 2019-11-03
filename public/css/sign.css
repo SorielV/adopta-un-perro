@@ -76,6 +76,23 @@
     display: grid;
     font-size: 1.5rem;
 }
+.img-lomito:hover{
+    border: 5px solid #E58A0B;
+}
+.btn-outline-info{
+    background-color:#6796AF !important;
+    color: white  !important;
+    border-color:#006E90 !important;
+    border-radius: 30px !important;
+    
+}
+.btn-outline-info:hover{
+    background-color:#006E90 !important;
+    border-color:#6796AF !important;
+}
+.btnNewLomito{
+    
+}
 
 @media (max-width: 1800px){
     .img-lomito {
