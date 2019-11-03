@@ -1,6 +1,7 @@
 
 const express = require("express");
 const passport = require("passport");
+const mongoose = require("mongoose");
 
 const app = express();
 
@@ -12,11 +13,17 @@ require('./utilities/mongodb')(mongoose); //conect to mongoDB
 require('./utilities/pug')(app, express); //using pug
 require('./utilities/passport')(passport); //using pasport
 
-app.use("/", require("./rutes/core")) //main domains
-app.use("/header", require("./rutes/header")) //main domains
-app.use("/login", require("./rutes/login")) //main domains
-app.use("/perrera", require("./rutes/perrera")) //main domains
-app.use("/usuario", require("./rutes/usuario")) //main domains
+
+// route middleware to make sure a user is logged in
+function isLoggedIn(req, res, next) {
+    // if user is authenticated in the session, carry on 
+    if (req.isAuthenticated())
+        return next();
+
+    res.redirect('/');
+}
+
+app.use("/", /*isLoggedIn,*/ require("./rutes/core")) //main domains
 app.use("/api", require("./rutes/api.js")) //api domains
 
 

@@ -3,7 +3,7 @@ var router = express.Router();
 const { Usuario, Perrera } = require('../models'); // /index
 
 router.get("/", (req, res) => {
-    res.render("test", { title: "test" });
+    res.redirect("/");
 });
 
 // post new user
