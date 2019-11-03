@@ -5,7 +5,7 @@
     font-size: 2.5rem;
 }
 .bg-color{
-    background-color: #FDF4E7;
+    background-color: rgb(253, 227, 190);
 }
 .body-height{
     height: 93vh;
@@ -35,17 +35,67 @@
     background-color:#6796AF !important;
 }
 .btn-outline-succes{
-    background-color:#6796AF  !important;
+    background-color:#D1AD4B  !important;
     color: white  !important;
-    border-color: white !important;
+    border-color: rgb(209, 160, 26) !important;
+    border-radius: 30px !important;
     
 }
 .btn-outline-succes:hover{
-    background-color:#D1AD4B !important;
+    background-color:#E58A0B !important;
 }
 .img-lomito {
     width: 700px; /* You can set the dimensions to whatever you want */
     max-height: 400px;
     object-fit: cover;
+    border-radius: 15px;
+}
+.fa-paw:hover{
+    color: #E58A0B;
+}
+.fa-grin-hearts:hover{
+    color: #E58A0B;
+}
+.iconNav-color:hover{
+    color: rgb(153, 114, 5);
+}
+.page-link:hover{
+    background-color: #006E90 !important;
+    border-color: #6796AF !important;
+}
+.page-link {
+    color:white !important;
+    background-color:#6796AF !important;
+    border: 1px solid #006E90 !important;
 }
 
+.modal-header{
+    background-color:#D1AD4B;
+}
+.modal-body{
+    display: grid;
+    font-size: 1.5rem;
+}
+.img-lomito:hover{
+    border: 5px solid #E58A0B;
+}
+.btn-outline-info{
+    background-color:#6796AF !important;
+    color: white  !important;
+    border-color:#006E90 !important;
+    border-radius: 30px !important;
+    
+}
+.btn-outline-info:hover{
+    background-color:#006E90 !important;
+    border-color:#6796AF !important;
+}
+.btnNewLomito{
+    
+}
+
+@media (max-width: 1800px){
+    .img-lomito {
+        max-height: 250px;
+    }
+}
