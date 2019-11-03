@@ -1,0 +1,278 @@
+<%- include('layout') -%>
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Login</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+          <article class="card-body">
+              <hr>
+              <p class="text-success text-center">Some message goes here</p>
+              <form>
+              <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                   </div>
+                  <input name="" class="form-control" placeholder="Email or login" type="email">
+              </div> <!-- input-group.// -->
+              </div> <!-- form-group// -->
+              <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                   </div>
+                  <input class="form-control" placeholder="******" type="password">
+              </div> <!-- input-group.// -->
+              </div> <!-- form-group// -->
+              <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+              </div> <!-- form-group// -->
+              <p class="text-center"><a href="#" class="btn">Forgot password?</a></p>
+              </form>
+          </article>
+          </div> <!-- card.// -->
+      </div>
+  </div>
+  </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-blue bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form method="get" action="/views/login.ejs">
+      <a href="" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#modalRegisterForm">login</a>
+    </form>
+  </div>
+</nav>
+
+<div style="background-color: navy;">
+  <div class="row d-flex align-items-end justify-content-end p-5">
+    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-sm-6 d-flex align-items-end">
+      <div class="container">
+        <div class="title">
+          <!-- Tabs with icons on Card -->
+          <div class="card card-nav-tabs">
+            <div class="card-header card-header-primary">
+              <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+              <div class="nav-tabs-navigation">
+                <div class="nav-tabs-wrapper">
+                  <ul class="nav nav-tabs" data-tabs="tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#profile" data-toggle="tab">
+                        <i class="material-icons">face</i>
+                        Lomitos
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#messages" data-toggle="tab">
+                        <i class="material-icons">chat</i>
+                        Instituciones
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body ">
+              <div class="tab-content text-center">
+                <div class="tab-pane active" id="profile">
+                  <div class="card">
+                    <h5 class="card-header info-color white-text text-center py-4">
+                      <strong>Adoptador de lomitos</strong>
+                    </h5>
+                    <!--Card content-->
+                    <div class="card-body px-lg-5 pt-0">
+
+                      <!-- Form -->
+                      <form class="text-center" style="color: #757575;" action="#!">
+
+                        <div class="form-row">
+                          <div class="col">
+                            <!-- First name -->
+                            <div class="md-form">
+                              <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                              <label for="materialRegisterFormFirstName">First name</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <!-- Last name -->
+                            <div class="md-form">
+                              <input type="email" id="materialRegisterFormLastName" class="form-control">
+                              <label for="materialRegisterFormLastName">Last name</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="md-form mt-0">
+                          <input type="email" id="materialRegisterFormEmail" class="form-control">
+                          <label for="materialRegisterFormEmail">E-mail</label>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="md-form">
+                          <input type="password" id="materialRegisterFormPassword" class="form-control"
+                            aria-describedby="materialRegisterFormPasswordHelpBlock">
+                          <label for="materialRegisterFormPassword">Password</label>
+                          <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                            At least 8 characters and 1 digit
+                          </small>
+                        </div>
+
+                        <!-- Phone number -->
+                        <div class="md-form">
+                          <input type="password" id="materialRegisterFormPhone" class="form-control"
+                            aria-describedby="materialRegisterFormPhoneHelpBlock">
+                          <label for="materialRegisterFormPhone">Phone number</label>
+                          <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                            Optional - for two step authentication
+                          </small>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
+                          <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our
+                            newsletter</label>
+                        </div>
+
+                        <!-- Sign up button -->
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                          type="submit">Sign in</button>
+                        <hr>
+
+                        <!-- Terms of service -->
+                        <p>By clicking
+                          <em>Sign up</em> you agree to our
+                          <a href="" target="_blank">terms of service</a>
+                      </form>
+                      <!-- Form -->
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="messages">
+
+                  <div class="card">
+
+                    <h5 class="card-header info-color white-text text-center py-4">
+                      <strong>Instituciones</strong>
+                    </h5>
+
+                    <!--Card content-->
+                    <div class="card-body px-lg-5 pt-0">
+
+                      <!-- Form -->
+                      <form class="text-center" style="color: #757575;" action="#!">
+
+                        <div class="form-row">
+                          <div class="col">
+                            <!-- First name -->
+                            <div class="md-form">
+                              <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                              <label for="materialRegisterFormFirstName">First name</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <!-- Last name -->
+                            <div class="md-form">
+                              <input type="email" id="materialRegisterFormLastName" class="form-control">
+                              <label for="materialRegisterFormLastName">Last name</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="md-form mt-0">
+                          <input type="email" id="materialRegisterFormEmail" class="form-control">
+                          <label for="materialRegisterFormEmail">E-mail</label>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="md-form">
+                          <input type="password" id="materialRegisterFormPassword" class="form-control"
+                            aria-describedby="materialRegisterFormPasswordHelpBlock">
+                          <label for="materialRegisterFormPassword">Password</label>
+                          <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                            At least 8 characters and 1 digit
+                          </small>
+                        </div>
+
+                        <!-- Phone number -->
+                        <div class="md-form">
+                          <input type="password" id="materialRegisterFormPhone" class="form-control"
+                            aria-describedby="materialRegisterFormPhoneHelpBlock">
+                          <label for="materialRegisterFormPhone">Phone number</label>
+                          <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                            Optional - for two step authentication
+                          </small>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
+                          <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our
+                            newsletter</label>
+                        </div>
+
+                        <!-- Sign up button -->
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                          type="submit">Sign in</button>
+
+                        <!-- Social register -->
+                        <p>or sign up with:</p>
+                        <hr>
+
+                        <!-- Terms of service -->
+                        <p>By clicking
+                          <em>Sign up</em> you agree to our
+                          <a href="" target="_blank">terms of service</a>
+                      </form>
+                      <!-- Form -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Tabs with icons on Card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
