@@ -58,7 +58,7 @@ router.get('/gallery', (req, res) => {
 
 // lomitos
 router.get('/mygallery', (req, res) => {
-    res.sendFile("/myGallery.html", { root: "views" });
+    res.sendFile("/myGalleryLomitos.html", { root: "views" });
 });
 
 // myProfile
@@ -69,6 +69,11 @@ router.get('/myprofile', (req, res) => {
 // registro
 router.get('/registro', (req, res) => {
     res.render('registro.ejs');
+});
+
+// registro
+router.get('/asd', (req, res) => {
+    res.sendFile("/galleryDogsHouse.html", { root: "views" });
 });
 
 // ----------------------------------------------------------
