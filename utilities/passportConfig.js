@@ -1,5 +1,5 @@
 var LocalStrategy = require('passport-local').Strategy;
-var bcrypt = require("bcript");
+var bcrypt = require("bcrypt");
 var Usuario = require("../models/usuario")
 var flash = require("express-flash")
 var session = require("express-session")
@@ -8,21 +8,21 @@ const SECRET = (process.env.SESSION_SECRET || 'ESTAMOSENHAKORAMACOLIMA');
 
 
 module.exports = (app, passport) => {
-    const getUserByEmail = email => { } //TODO: QUE ASAQUE EL USUARIO DE MONGO
-    /*
-        Usuario.findById(id, (err, user) => {
-            done(err, user);
+    const getUserByEmail = email => {
+        Usuario.findOne({ correo: 'iphone' }, (err, usuario) => {
+            return usuario;
         });
-    */
+    }
 
-    const authenticateUser = async (email, password, done) => {
-        let user = getUserByEmail(email);
-        if (user == null) {
-            return done(null, false, { message: "no se encontro el usuario" });
-        }
 
+    const authenticateUser = async (userName, password, done) => {
         try {
-            if (await bcrypt.compare(password, user.pasword)) {
+            let user = getUserByEmail(userName);
+            if (user == null) {
+                return done(null, false, { message: "no se encontro el usuario" });
+            }
+
+            if (await bcrypt.compare(password, user.pasword)) { //contras coinciden
                 return done(null, user);
             }
             else {

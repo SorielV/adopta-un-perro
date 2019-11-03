@@ -11,19 +11,10 @@ app.set('view engine', 'ejs');
 
 require('./utilities/mongodb')(mongoose); //conect to mongoDB
 require('./utilities/pug')(app, express); //using pug
-require('./utilities/passport')(passport); //using pasport
+require('./utilities/passportConfig')(app, passport); //using pasport
 
 
-// route middleware to make sure a user is logged in
-function isLoggedIn(req, res, next) {
-    // if user is authenticated in the session, carry on 
-    if (req.isAuthenticated())
-        return next();
-
-    res.redirect('/');
-}
-
-app.use("/", /*isLoggedIn,*/ require("./rutes/core")) //main domains
+app.use("/", require("./rutes/core")) //main domains
 app.use("/api", require("./rutes/api.js")) //api domains
 
 
