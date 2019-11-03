@@ -57,6 +57,11 @@ router.get('/gallery', (req, res) => {
 });
 
 // lomitos
+router.get('/gallery/id', (req, res) => {
+    res.sendFile("/lomitosGallery.html", { root: "views" });
+});
+
+// lomitos
 router.get('/mygallery', (req, res) => {
     res.sendFile("/myGalleryLomitos.html", { root: "views" });
 });
@@ -72,7 +77,7 @@ router.get('/registro', (req, res) => {
 });
 
 // registro
-router.get('/asd', (req, res) => {
+router.get('/doghouses', (req, res) => {
     res.sendFile("/galleryDogsHouse.html", { root: "views" });
 });
 
