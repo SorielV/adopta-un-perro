@@ -34,12 +34,25 @@
 
     <div class=" body-height">
         <div>
-            <form class="form-inline d-flex justify-content-center mt-4">
-                <button class="btn btn-outline-succes px-md-5 m-5 d-block" type="submit" onclick="modalLomitoAlea()">
-                    <a class="display-4"> Seleccionar lomito aleatorio</a><br>
-                    <a class=" display-3"><i class="fas fa-bone"></i></a>
-                </button>
-            </form>
+            <div class="d-flex justify-content-around">
+                <form class="form-inline d-flex justify-content-center mt-4">
+                    <button class="btn btn-outline-succes px-md-5 m-2 d-block" type="submit"
+                        onclick="modalLomitoAlea()">
+                        <a class="small-size"> Seleccionar lomito aleatorio</a><br>
+                        <a class=" small-size"><i class="fas fa-bone"></i></a>
+                    </button>
+                </form>
+                <form class="form-inline d-flex justify-content-center mt-4">
+                    <a class="btn btn-outline-succes px-md-5 m-2 d-block" href="/doghouses">
+                        <div>
+                            <span class="small-size"> Casas de adopcion cerca de mi</span>
+                            <br>
+                            <span class=" small-size"><i class="fas fa-home"></i></span>
+                        </div>
+                    </a>
+                </form>
+            </div>
+
             <div class="row text-center">
                 <div class="col-md-12 d-flex ">
 
@@ -51,8 +64,7 @@
 
                     <figure class="col-md-4">
                         <a href="#" onclick="modalAdopt()" data-size="1600x1067">
-                            <img alt="picture" src="img/lomitos/lomito2.jpg"
-                                class="img-fluid img-lomito img-lomito " />
+                            <img alt="picture" src="img/lomitos/lomito2.jpg" class="img-fluid img-lomito img-lomito " />
                         </a>
                     </figure>
 
