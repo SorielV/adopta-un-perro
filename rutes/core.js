@@ -17,11 +17,13 @@ router.get('/logout', (req, res) => {
     res.redirect('/');
 });
 
+// lomitos
+router.get('/gallery', (req, res) => {
+    res.sendFile("/SignInUser.html", { root: "views" });
+});
 
 // LOGIN
 router.get('/login', (req, res) => {
-    // show the login form
-
     // render the page and pass in any flash data if it exists
     res.render('login', { title: "home" });
 });
