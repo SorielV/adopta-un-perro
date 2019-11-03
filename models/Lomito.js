@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 var UsrSchema = new Schema({
    nombre: String,
    edad: String,
-   tamaño: String,
+   estautura: String,
    peso: String,
    vacunas: String,
-   señas_particulares: String
+   señas: String
 });
 module.exports = mongoose.model('lomito', UsrSchema);

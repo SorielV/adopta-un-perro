@@ -22,8 +22,8 @@
         <div class="ml-auto mr-2rem">
             <a href="#"> <i class="fas fa-dog iconNav-size iconNav-color  ml-3"
                     title="Galeria de lomitos en adopción"></i> </a href="#">
-            <a href="#"> <i class="fas fa-hand-holding-heart iconNav-size iconNav-color ml-3" title="Donaciones a href="
-                    #" dog´s Home"></i></a href="#">
+            <a href="./dogsHome.html"> <i class="fas fa-hand-holding-heart iconNav-size iconNav-color ml-3"
+                    title="Donaciones a dog´s home"></i></a href="#">
             <a href="#"> <i class="fas fa-home iconNav-size iconNav-color ml-3" title="Perritos que me gustan"></i></a>
         </div>
         <form class="form-inline">
@@ -104,29 +104,55 @@
             </ul>
         </nav>
     </div>
-    <!-- Modal -->
+    <!-- Modal para ver lomito-->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 id="lomitoName" class="modal-title">Solobino</h4>
+                    <h3 id="lomitoName" class="modal-title">Solobino</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
+
                 <div class="modal-body">
                     <img alt="picture" src="../public/img/lomitos/lomito1.jpg" class="img-fluid">
-                    <p id="lomitoDescription">Descripcion del lomito</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#"> I like it <i class="fas fa-paw iconNav-size iconNav-color  ml-3 iconHover"
-                            title="Agregar a los lomitos que me gustan"></i> </a href="#">
-                    <a href="#"> I want it <i class="fas fa-grin-hearts iconNav-size iconNav-color ml-3 iconHover"
-                            title="Adoptar" href=" #" dog´s Home"></i></a href="#">
+                    <div id="verLomito">
+                        <div>
+                            <a class="font-weight-bold">Nombre: <a id="nombreLomito">Solovino</a></a>
+                        </div>
+                        <div>
+                            <a class="font-weight-bold">Edad: <a id="edadLomito"></a></a>
+                        </div>
+                        <div>
+                            <a class="font-weight-bold">Estatura: <a id="estaturaLomito"></a></a>
+                        </div>
+                        <div>
+                            <a class="font-weight-bold">Peso: <a id="pesoLomito"></a></a>
+                        </div>
+                        <div>
+                            <a class="font-weight-bold">Vacunas: <a id="VacunaLomito"></a></a>
+                        </div>
+                        <div>
+                            <a class="font-weight-bold">Señas particulares: <a id="señasLomito"></a></a>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#"> I like it <i class="fas fa-paw iconNav-size iconNav-color  ml-3 iconHover"
+                                    title="Agregar a los lomitos que me gustan"></i> </a href="#">
+                            <a href="#" onclick="solicitarAdoptar()"> I want it <i
+                                    class="fas fa-grin-hearts iconNav-size iconNav-color ml-3 iconHover" title="Adoptar"
+                                    href=" #" dog´s Home"></i></a href="#">
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
     </div>
+
+
+
+
 
 </body>
 <script src="../utilities/lomitos.js"></script>

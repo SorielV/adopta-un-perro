@@ -72,6 +72,10 @@
 .modal-header{
     background-color:#D1AD4B;
 }
+.modal-body{
+    display: grid;
+    font-size: 1.5rem;
+}
 
 @media (max-width: 1800px){
     .img-lomito {
