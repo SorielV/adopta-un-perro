@@ -12,17 +12,14 @@ router.get("/", (req, res) => {
 router.post('/login', passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login' }));
 
 // process the signup form
-app.post('/signup', passport.authenticate('local-signup', {
+router.post('/signup', passport.authenticate('local-signup', {
     successRedirect : '/profile', // redirect to the secure profile section
     failureRedirect : '/signup', // redirect back to the signup page if there is an error
     failureFlash : true // allow flash messages
 }));
 
-// process the login form TODO:
-router.post('/login');
-
 // LOGIN
-router.get('/login', function (req, res) {
+router.get('/login', (req, res) => {
     // show the login form
 
     // render the page and pass in any flash data if it exists
@@ -30,7 +27,7 @@ router.get('/login', function (req, res) {
 });
 
 // SIGNUP
-router.get('/signup', function (req, res) {
+router.get('/signup', (req, res) => {
     // show the signup form
 
     // render the page and pass in any flash data if it exists
@@ -39,12 +36,12 @@ router.get('/signup', function (req, res) {
 
 // PROFILE SECTION
 // protected, have to be logged in. with middleware to verify if isLoggedIn
-router.get('/profile', isLoggedIn, function (req, res) {
+router.get('/profile', isLoggedIn, (req, res)=>{
     res.render('profile.pug', { user: req.user });
 });
 
 // LOGOUT
-router.get('/logout', function (req, res) {
+router.get('/logout', (req, res) => {
     req.logout();
     res.redirect('/');
 });
