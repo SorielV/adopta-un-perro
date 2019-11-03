@@ -1,10 +1,11 @@
 import { functionTypeAnnotation } from "babel-types";
+// LOMITOS GALLERY
 
 function modalAdopt(){
     $('#myModal').css("margin-top", $(window).height() / 3.5 - $('.modal-content').height() / 3);
     $("#myModal").modal();
 }
-function modalLomitoAlea(){
+function modalLomitoAlea(){ //SELECCIONA LOMITGO ALEATORIO
     $('#myModal').css("margin-top", $(window).height() / 3.5 - $('.modal-content').height() / 3);
     $("#myModal").modal();
 }
