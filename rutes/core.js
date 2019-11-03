@@ -8,7 +8,7 @@ router.post('/register', mustNotBeLoged, async (req, res) => {
     try {
         let usuario = new Usuario({
             nombre: req.body.name,
-            contraHash: await bcrypt.hash(req.body.password, 10),
+            contraHash: await bcrypt.hash(req.body.contra, 10),
             correo: req.body.correo,
         })
         await usuario.save();
@@ -53,12 +53,12 @@ router.get('/logout', mustBeLogedIn, (req, res) => {
 
 // lomitos
 router.get('/gallery', (req, res) => {
-    res.sendFile("/SignInUser.html", { root: "views" });
+    res.sendFile("/lomitosGallery.html", { root: "views" });
 });
 
 // lomitos
-router.get('/lg', (req, res) => {
-    res.sendFile("/lomitosGallery.html", { root: "views" });
+router.get('/mygallery', (req, res) => {
+    res.sendFile("/myGallery.html", { root: "views" });
 });
 
 // myProfile
